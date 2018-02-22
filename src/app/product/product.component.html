@@ -8,6 +8,7 @@
           <h4 class="card-title">{{ item.title }}</h4>
           <p class="card-text">Item Count:  {{ item.itemCount }}</p>
           <p class="card-text"> {{ item.remark }}</p>
+          <p>Price:  <i style="font-size: 10px;" class="fa">&#xf20b;</i>{{ item.price }}</p>
           <button class="btn btn-primary" (click)="addItem(item.id)">+</button>
           <button class="btn btn-primary" (click)="removeItem(item.id)">-</button>
         </div>

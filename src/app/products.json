@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "iphone",
-      "itemCount": 2,
+      "itemCount": 4,
       "src": "https://images-eu.ssl-images-amazon.com/images/G/31/img15/Electronics/Cat-Navs/1-Mobile-Phones-Voodoo-Cat-tile.jpg",
       "alt": "An iphone",
       "max": 10,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "title": "Laptop",
-      "itemCount": 1,
+      "itemCount": 0,
       "src": "https://images-eu.ssl-images-amazon.com/images/G/31/img15/Electronics/Cat-Navs/2-Laptops-Voodoo-Cat-tile.jpg",
       "alt": "A Laptop",
       "max": 10,
