@@ -13,7 +13,7 @@
     {
       "id": 2,
       "title": "Laptop",
-      "itemCount": 0,
+      "itemCount": 2,
       "src": "https://images-eu.ssl-images-amazon.com/images/G/31/img15/Electronics/Cat-Navs/2-Laptops-Voodoo-Cat-tile.jpg",
       "alt": "A Laptop",
       "max": 10,
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "title": "TV",
-      "itemCount": 1,
+      "itemCount": 0,
       "src": "https://images-eu.ssl-images-amazon.com/images/G/31/img15/Electronics/Cat-Navs/6-Television-Voodoo-Cat-tile.jpg",
       "alt": "TV",
       "max": 10,

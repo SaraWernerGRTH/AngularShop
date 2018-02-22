@@ -12,7 +12,7 @@ import { RequestOptions } from '@angular/http';
 @Injectable()
 export class ShoppingChrtService {
 
-  constructor(private http: HttpClient) {debugger }  // items2=[
+  constructor(private http: HttpClient) { }  // items2=[
 
   items:any;
 
@@ -23,9 +23,7 @@ export class ShoppingChrtService {
   }
 
   get(res: Response){
-    debugger
     let body = res;
-    debugger
     return body;
   }
 

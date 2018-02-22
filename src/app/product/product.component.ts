@@ -25,7 +25,6 @@ export class ProductComponent implements OnInit {
   // ];
   remark(id){
     this.currentItemId=id;
-    debugger
     this.items[id-1].remark="Oooops"
     setTimeout(()=>{
       this.items[this.currentItemId-1].remark=""

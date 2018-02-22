@@ -15,21 +15,34 @@ export class BasketComponent implements OnInit {
     items:any;
     totalAmount=0;
     totalPrice=0;
-    ngOnInit() { 
+
+    removeItem(item){
+      item.itemCount=0;
+      this.shoppingChrtService.updateItem(item.id,item)
+      .subscribe((e: any) => {
+        this.upload();
+      //   this.shoppingChrtService.getProduct()
+      //   .subscribe((ee: any) => {
+      //     this.items=ee.filter(p=>p.itemCount>0);        
+      // });
+    });
+   }
+    upload(){
+      this.totalAmount=0;
+      this.totalPrice=0; 
       this.shoppingChrtService.getProduct()
       .subscribe((e: any) => {
-        console.log('ScrollSpy::test: ', e);
-        this.items = e;
-        this.items=this.items.filter(p=>p.itemCount>0);
+        this.items=e.filter(p=>p.itemCount>0);
         this.totalSum=this.items.length;
         this.items.forEach(element => {
           this.totalAmount+=element.itemCount;
-          if(element.itemCount){
-            this.totalPrice+=element.itemCount*element.price;
-          }
+          this.totalPrice+=element.itemCount*element.price;
         });
         
     });
+    }
+    ngOnInit() { 
+     this.upload();
     }
 
 }
